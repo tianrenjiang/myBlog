@@ -1,11 +1,31 @@
-import TopBar from './topbar/TopBar'
+import React from 'react';
+import {
+  BrowserRouter,
+  Routes,
+  Route
+} from "react-router-dom";
+import TopBar from './components/topbar/TopBar'
+import Login from './pages/login/Login';
+import Register from './pages/register/Register';
+import Setting from './pages/settings/Setting';
 import Home from './pages/home/Home'
+import Single from './pages/single/Single';
+import Write from './pages/write/Write';
 function App() {
+  const user = true;
   return (
-    <div>
+    <BrowserRouter>
       <TopBar/>
-      <Home />
-    </div>
+      <Routes>
+        {user?<Route path="/" element={<Home />}/>:<Route path="/" element={<Login />}/>}
+        {user? <Route path="/register" element={<Register />}/>:<Route path="/register" element={<Register />}/>}
+        {user? <Route path="/login" element={<Login />}/>:<Route path="/login" element={<Login />}/>}
+        {user?<Route path="/write" element={<Write />}/>:<Route path="/write" element={<Login />}/>}
+        {user?<Route path="/settings" element={<Setting />}/>:<Route path="/settings" element={<Login />}/>}
+        <Route path="/post/:postId" element={<Single />}/>
+      </Routes>
+      
+    </BrowserRouter>
   );
 }
 
