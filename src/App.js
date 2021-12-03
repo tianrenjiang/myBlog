@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import {
   BrowserRouter,
   Routes,
@@ -11,8 +11,11 @@ import Setting from './pages/settings/Setting';
 import Home from './pages/home/Home'
 import Single from './pages/single/Single';
 import Write from './pages/write/Write';
+import { Context } from './context/Context';
 function App() {
-  const user = true;
+  const {user}= useContext(Context);
+  // console.log(user);
+  //如果浏览器中缓存了登录信息就会出现
   return (
     <BrowserRouter>
       <TopBar/>

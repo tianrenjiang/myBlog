@@ -11,4 +11,9 @@ export const LoginFailure=() =>({
     type:'LOGIN_FAILURE'
 })
 
+export const Logout = () => ({
+    type: 'LOGOUT',
+})
+
+
 //actions是需要用来调度的，使用reducer来进行调度
