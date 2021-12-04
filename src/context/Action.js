@@ -15,5 +15,17 @@ export const Logout = () => ({
     type: 'LOGOUT',
 })
 
+export const UpdateStart = (userCredentials) => ({
+    type: "UPDATE_START",
+});
+
+export const UpdateSuccess = (user) => ({
+    type: "UPDATE_SUCCESS",
+    payload: user,
+});
+
+export const UpdateFailure = () => ({
+    type: "UPDATE_FAILURE",
+});
 
 //actions是需要用来调度的，使用reducer来进行调度
