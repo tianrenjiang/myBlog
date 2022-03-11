@@ -20,8 +20,7 @@ You will also see any lint errors in the console.
 在学院实验室部署服务器，用户在校园内通过校园网络即可访问，注册博客用户。  
 相关技术：Node.js、JSON Web Tokens(JWT)、MongoDB、React  
 
-![Image text](https://raw.githubusercontent.com/tianrenjiang/FoodOrder/main/img_folder/204354.png)
-![Image text](https://raw.githubusercontent.com/tianrenjiang/FoodOrder/main/img_folder/204433.png)
-![Image text](https://raw.githubusercontent.com/tianrenjiang/FoodOrder/main/img_folder/204532.png)
-
+![Image text](https://raw.githubusercontent.com/tianrenjiang/myBlog/main/public/204354.png)
+![Image text](https://raw.githubusercontent.com/tianrenjiang/myBlog/main/public/204433.png)
+![Image text](https://raw.githubusercontent.com/tianrenjiang/myBlog/main/public/204532.png)
 
